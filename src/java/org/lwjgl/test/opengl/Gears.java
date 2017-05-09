@@ -254,7 +254,7 @@ public class Gears {
 		glNormal3f(0.0f, 0.0f, 1.0f);
 
 		/* draw front face */
-		glBegin(GL_QUAD_STRIP);
+	/*	glBegin(GL_QUAD_STRIP);
 		for (i = 0; i <= teeth; i++) {
 			angle = i * 2.0f * (float) Math.PI / teeth;
 			glVertex3f(r0 * (float) Math.cos(angle), r0 * (float) Math.sin(angle), width * 0.5f);
@@ -268,7 +268,7 @@ public class Gears {
 		glEnd();
 
 		/* draw front sides of teeth */
-		glBegin(GL_QUADS);
+	/*	glBegin(GL_QUADS);
 		for (i = 0; i < teeth; i++) {
 			angle = i * 2.0f * (float) Math.PI / teeth;
 			glVertex3f(r1 * (float) Math.cos(angle), r1 * (float) Math.sin(angle), width * 0.5f);

@@ -897,7 +897,7 @@ public class MappedObjectTransformer {
 		mappedSubtype = className_to_subtype.get(fieldInsn.owner);
 		if ( mappedSubtype == null ) { // early out
 			// MappedSet.view
-			outer:
+			//outer:
 			if ( "view".equals(fieldInsn.name) && fieldInsn.owner.startsWith(MAPPEDSET_PREFIX) )
 				return generateSetViewInstructions(fieldInsn);
 
@@ -1226,7 +1226,7 @@ public class MappedObjectTransformer {
 
 	private static void getClassEnums(final Class clazz, final Map<Integer, String> map, final String... prefixFilters) {
 		try {
-			OUTER:
+			//OUTER:
 			for ( Field field : clazz.getFields() ) {
 				if ( !Modifier.isStatic(field.getModifiers()) || field.getType() != int.class )
 					continue;

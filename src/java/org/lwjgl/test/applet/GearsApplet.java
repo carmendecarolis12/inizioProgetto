@@ -317,21 +317,20 @@ public class GearsApplet extends Applet {
 		glShadeModel(GL_FLAT);
 		glNormal3f(0.0f, 0.0f, 1.0f);
 		/* draw front face */
-		glBegin(GL_QUAD_STRIP);
+	/*	glBegin(GL_QUAD_STRIP);
 		for (i = 0; i <= teeth; i++) {
 			angle = i * 2.0f * (float) Math.PI / teeth;
 			glVertex3f(r0 * (float) Math.cos(angle), r0 * (float) Math.sin(angle), width * 0.5f);
 			glVertex3f(r1 * (float) Math.cos(angle), r1 * (float) Math.sin(angle), width * 0.5f);
 			if (i < teeth) {
 				glVertex3f(r0 * (float) Math.cos(angle), r0 * (float) Math.sin(angle), width * 0.5f);
-				glVertex3f(r1 * (float) Math.cos(angle + 3.0f * da), r1 * (float) Math.sin(angle + 3.0f * da),
-						width * 0.5f);
+				glVertex3f(r1 * (float) Math.cos(angle + 3.0f * da), r1 * (float) Math.sin(angle + 3.0f * da),width * 0.5f);
 			}
 		}
 		glEnd();
 
 		/* draw front sides of teeth */
-		glBegin(GL_QUADS);
+	/*	glBegin(GL_QUADS);
 		for (i = 0; i < teeth; i++) {
 			angle = i * 2.0f * (float) Math.PI / teeth;
 			glVertex3f(r1 * (float) Math.cos(angle), r1 * (float) Math.sin(angle), width * 0.5f);
@@ -339,8 +338,8 @@ public class GearsApplet extends Applet {
 			glVertex3f(r2 * (float) Math.cos(angle + 2.0f * da), r2 * (float) Math.sin(angle + 2.0f * da), width * 0.5f);
 			glVertex3f(r1 * (float) Math.cos(angle + 3.0f * da), r1 * (float) Math.sin(angle + 3.0f * da), width * 0.5f);
 		}
-		glEnd();
-
+		glEnd(); */
+		
 		/* draw back face */
 		glBegin(GL_QUAD_STRIP);
 		for (i = 0; i <= teeth; i++) {
